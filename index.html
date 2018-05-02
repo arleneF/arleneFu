@@ -1,401 +1,405 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Arlene's Homepage</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+---
+layout: default
+title: 我的Blog
+---
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+　　{% for post in site.posts %}
+　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　{% endfor %}
+</ul>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+  <title>Arlene's Homepage</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+</head>
+<body>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<!-- Header -->
-								<header id="header">
-									<!--<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>-->
-									<a href="index.html" class="logo">Welcome to <strong>Arlene</strong> 's Homepage</a>
-									<ul class="icons">
-										<li><a href="#" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<!-- <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
-										<li><a href="#" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<!-- <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li> -->
-										<li><a href="https://ca.linkedin.com/in/arlenefu" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<!-- <li><a href="#" class="icon fa-mobile-phone"><span class="label">Mobile</span></a></li> -->
-										<li><a href="https://github.com/arleneF" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-								</header>
+  <!-- Wrapper -->
+    <div id="wrapper">
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<!-- <h1>Hi, I’m Editorial<br />
-											by HTML5 UP</h1> -->
-											<h1>Arlene Fu</h1>
-											<p>A computer engineering student from SFU</p>
-										</header>
-										<p>I had completed my first co-op term with IBM Canada Ltd as a quality engineer.
-											Throughout my time at IBM, I had gained
-											experience developing and implementing automated software testing modules. I am working as a
-											research assistant in SFU multimedia communication lab since May 2018, where parts of my duty
-											are facial recognition, camera calibration, and acoustic beamforming. I am experienced in
-											implementing applications on FPGA using VHDL and assembly language. I also have skills in
-											designing both analog and digital system. However, my strength lies in software development,
-											I am proficient in a programming language such as SQL, C, C++, Python, Matlab, and so on.
-											My main interests are focused on machine learning and image/video coding.</p>
-										<!-- <ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul> -->
-									</div>
-									<span class="image object">
-										<img src="images/IMG_1854.jpg" alt="" />
-									</span>
-								</section>
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+            <!-- Header -->
+              <header id="header">
+                <!--<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>-->
+                <a href="index.html" class="logo">Welcome to <strong>Arlene</strong> 's Homepage</a>
+                <ul class="icons">
+                  <li><a href="#" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="#" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                  <!-- <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
+                  <li><a href="#" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                  <!-- <li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li> -->
+                  <li><a href="https://ca.linkedin.com/in/arlenefu" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <!-- <li><a href="#" class="icon fa-mobile-phone"><span class="label">Mobile</span></a></li> -->
+                  <li><a href="https://github.com/arleneF" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+                </ul>
+              </header>
 
-							<!-- Section -->
-								<section id="skill">
-									<header class="major">
-										<h2>SUMMARY OF SKILLS</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-code"></span>
-											<div class="content">
-												<h3>SOFTWARE</h3>
-												<ul>
-													<li><strong>Programming Language: </strong></br>C/C++, Java, SQL, Python, Swift, VHDL, Assembly Language, HTML, XML, CakePHP, Express</li>
-													<li><strong>Development Tools: </strong>Microsoft Visual Studio, MATLAB, Keil uVision, Xcode, Modelsim, Quartus II, Eclipse IDE, IntelliJ, Vivado, Codeblocks </li>
-													<li><strong>Circuit Simulators: </strong>Eagle 6.5, PSpice, LT-Spice</li>
-													<li><strong>Operating System: </strong>Linux, Mac OS X, iOS, Windows</li>
-												</ul>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-paper-plane"></span>
-											<div class="content">
-												<h3>HARDWARE(need to change icon, update fontawesome version)</h3>
-												<ul>
-													<li><strong>Lab Equipment: </strong>Oscilloscope, DMM, Function Generator, SPA, LCR bridge</li>
-													<li><strong>Microcontroller: </strong>ZedBoard, Altera DE2-115</li>
-												</ul>
-											</div>
-										</article>
-										<article>
-											<span class="icon fa-rocket"></span>
-											<div class="content">
-												<h3>OTHERS(need to change icon, update fontawesome version)</h3>
-												<ul>
-													<li>Agile development, <strong>iOS</strong> application development, <strong>FPGA</strong> design, <strong>Integrated circuit design</strong></li>
-													<li><strong>Soldering</strong> skill</li>
-													<li>Proficient understanding of <strong>computer architecture</strong> and <strong>real time embedded system</strong></li>
-													<li>Solid background in various <strong>data structures</strong>, <strong>algorithms</strong> </li>
-												</ul>
-											</div>
-										</article>
-									</div>
-								</section>
+            <!-- Banner -->
+              <section id="banner">
+                <div class="content">
+                  <header>
+                    <!-- <h1>Hi, I’m Editorial<br />
+                    by HTML5 UP</h1> -->
+                    <h1>Arlene Fu</h1>
+                    <p>A computer engineering student from SFU</p>
+                  </header>
+                  <p>I had completed my first co-op term with IBM Canada Ltd as a quality engineer.
+                    Throughout my time at IBM, I had gained
+                    experience developing and implementing automated software testing modules. I am working as a
+                    research assistant in SFU multimedia communication lab since May 2018, where parts of my duty
+                    are facial recognition, camera calibration, and acoustic beamforming. I am experienced in
+                    implementing applications on FPGA using VHDL and assembly language. I also have skills in
+                    designing both analog and digital system. However, my strength lies in software development,
+                    I am proficient in a programming language such as SQL, C, C++, Python, Matlab, and so on.
+                    My main interests are focused on machine learning and image/video coding.</p>
+                  <!-- <ul class="actions">
+                    <li><a href="#" class="button big">Learn More</a></li>
+                  </ul> -->
+                </div>
+                <span class="image object">
+                  <img src="images/IMG_1854.jpg" alt="" />
+                </span>
+              </section>
 
-								<!--Work experience Section  -->
-								<section>
-									<header class="major">
-										<h2>PROFESSIONAL WORK EXPERIENCE</h2>
-									</header>
-									<div class="posts">
-										<article id="IBM">
-											<h3><strong>Software Test Specialist, IBM, Victoria, B.C.</strong><br>Jan – Apr 2016</h3>
-											<ul>
-												<li>Utilized testing methodologies and applied these to complete a variety of function tests, effectively
-      											preventing function failure for the application to give better user experience, and help application
-      											developers to optimize the software</li>
-												<li>Communicated with supervisor and colleagues about the bugs being detected and balanced the
-												      commercial benefit and technical needs of the application, in order to give detailed testing feedback,
-												      and provided useful defect reports to developers</li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article id="RA">
-											<h3><strong>Research Assistant in Multimedia Lab, SFU, Burnaby, B.C.</strong><br>May 2017 - Present</h3>
-											<p>...</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-								</section>
+            <!-- Section -->
+              <section id="skill">
+                <header class="major">
+                  <h2>SUMMARY OF SKILLS</h2>
+                </header>
+                <div class="features">
+                  <article>
+                    <span class="icon fa-code"></span>
+                    <div class="content">
+                      <h3>SOFTWARE</h3>
+                      <ul>
+                        <li><strong>Programming Language: </strong></br>C/C++, Java, SQL, Python, Swift, VHDL, Assembly Language, HTML, XML, CakePHP, Express</li>
+                        <li><strong>Development Tools: </strong>Microsoft Visual Studio, MATLAB, Keil uVision, Xcode, Modelsim, Quartus II, Eclipse IDE, IntelliJ, Vivado, Codeblocks </li>
+                        <li><strong>Circuit Simulators: </strong>Eagle 6.5, PSpice, LT-Spice</li>
+                        <li><strong>Operating System: </strong>Linux, Mac OS X, iOS, Windows</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="icon fa-paper-plane"></span>
+                    <div class="content">
+                      <h3>HARDWARE(need to change icon, update fontawesome version)</h3>
+                      <ul>
+                        <li><strong>Lab Equipment: </strong>Oscilloscope, DMM, Function Generator, SPA, LCR bridge</li>
+                        <li><strong>Microcontroller: </strong>ZedBoard, Altera DE2-115</li>
+                      </ul>
+                    </div>
+                  </article>
+                  <article>
+                    <span class="icon fa-rocket"></span>
+                    <div class="content">
+                      <h3>OTHERS(need to change icon, update fontawesome version)</h3>
+                      <ul>
+                        <li>Agile development, <strong>iOS</strong> application development, <strong>FPGA</strong> design, <strong>Integrated circuit design</strong></li>
+                        <li><strong>Soldering</strong> skill</li>
+                        <li>Proficient understanding of <strong>computer architecture</strong> and <strong>real time embedded system</strong></li>
+                        <li>Solid background in various <strong>data structures</strong>, <strong>algorithms</strong> </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </section>
 
-							<!-- Project Section -->
-								<section>
-									<header class="major">
-										<h2>TECHNICAL PROJECTS</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3><strong>Graphical UART Performance Monitor and VGA Console,</strong><br> Sept – Dec 2016</h3>
-											<ul>
-												<li>Created a software rendering framework for drawing an image on the screen with alpha
-													blending and clipping required image content</li>
-												<li>Developed and integrated VGA and timer driver in Linux environment through PetaLinux
-													and cross-complied it on ZedBoard to establish connection between keyboard and screen
-													display as a graphical performance monitor with the functionality of alphabetical interpretation
-													on keyboard through VGA driver and displaying performance metrics about the operation of the UART on the screen</li>
-												<li>Improved efficiency and coherency with the design specification by reducing times of printing metrics,
-      										transporting intermediate data into local buffer instead of global buffer</li>
-												<li>Supported several special functions such as changing new lines both manually and automatically,
- 													deleting characters using backspace and implemented special cases when the new line is needed or
- 													the screen is filled up</li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3><strong>Microcontroller Interfacing and Assembly Language, </strong><br>May – Aug 2016</h3>
-											<ul>
-												<li>Examined conditional braches and branching to subroutines by developing a program to calculate
- 														elements of the Fibonacci sequence, and use 128-bit variables instead of 64-bit in order to store more
- 														elements of the sequence</li>
-												<li>Studied interrupt by generating interrupt handler and synchronizing the display updates associated with
-      											OLED device to allow application’s counter and LEDs updated at the same time</li>
-												<li>Configured counter to generate a periodic interrupt after a certain amount of time, displayed changes
-														on the screen, also used this functionality to debounce ZedBoard’s button presses and releases </li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<h3>iOS Application: PhysioGuide<br>Sept – Dec 2015</h3>
-											<ul>
-												<li>Collaborated with 3 other students, self-studied Swift in Xcode to analyze, design and develop an iOS
-      											application (both code and UI) that provides several appropriate exercise video and advised exercise
-      											routines to help with improving personal health and fitness</li>
-												<li>Used build-in mobile feature (Accelerometer and Gyroscope) to detect if user do the exercise properly</li>
-												<li><a href="https://sites.google.com/site/starsfucmpt275/ ">Project Link</li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+              <!--Work experience Section  -->
+              <section>
+                <header class="major">
+                  <h2>PROFESSIONAL WORK EXPERIENCE</h2>
+                </header>
+                <div class="posts">
+                  <article id="IBM">
+                    <h3><strong>Software Test Specialist, IBM, Victoria, B.C.</strong><br>Jan – Apr 2016</h3>
+                    <ul>
+                      <li>Utilized testing methodologies and applied these to complete a variety of function tests, effectively
+                          preventing function failure for the application to give better user experience, and help application
+                          developers to optimize the software</li>
+                      <li>Communicated with supervisor and colleagues about the bugs being detected and balanced the
+                            commercial benefit and technical needs of the application, in order to give detailed testing feedback,
+                            and provided useful defect reports to developers</li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article id="RA">
+                    <h3><strong>Research Assistant in Multimedia Lab, SFU, Burnaby, B.C.</strong><br>May 2017 - Present</h3>
+                    <p>...</p>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+              </section>
 
-							<!-- Other work Section -->
-								<section>
-									<header class="major">
-										<h2>NON-TECHNICAL WORK EXPERIENCE</h2>
-									</header>
-									<div class="posts">
-										<article id="cashier">
-											<h3>Cashier, International News, Brentwood Town Center, Burnaby, B.C.<br>May – Oct 2015</h3>
-											<ul>
-												<li>Ensured customers’ satisfaction and dealt with all the complaints by providing them with high quality
-       											services to build strong relationships and connections</li>
-												<li>Assisted customers with their purchases with great patience to promote the products and enhance the
-       											reputation of the store</li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article id="peerEdu">
-											<h3>Peer Educator, FIC<br>Jan – Sept 2015</h3>
-											<ul>
-												<li>Helped students in FIC with subjects like calculus, physics, python and C++ language, Micro-economy
-      											and other engineering courses by spending time studying with them to solve and explain questions</li>
-												<li>Taught students by explaining theorems and providing several sample exercises to develop their
-      											logical thought in mathematics and improve their letter grades</li>
-											</ul>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+            <!-- Project Section -->
+              <section>
+                <header class="major">
+                  <h2>TECHNICAL PROJECTS</h2>
+                </header>
+                <div class="posts">
+                  <article>
+                    <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+                    <h3><strong>Graphical UART Performance Monitor and VGA Console,</strong><br> Sept – Dec 2016</h3>
+                    <ul>
+                      <li>Created a software rendering framework for drawing an image on the screen with alpha
+                        blending and clipping required image content</li>
+                      <li>Developed and integrated VGA and timer driver in Linux environment through PetaLinux
+                        and cross-complied it on ZedBoard to establish connection between keyboard and screen
+                        display as a graphical performance monitor with the functionality of alphabetical interpretation
+                        on keyboard through VGA driver and displaying performance metrics about the operation of the UART on the screen</li>
+                      <li>Improved efficiency and coherency with the design specification by reducing times of printing metrics,
+                        transporting intermediate data into local buffer instead of global buffer</li>
+                      <li>Supported several special functions such as changing new lines both manually and automatically,
+                        deleting characters using backspace and implemented special cases when the new line is needed or
+                        the screen is filled up</li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article>
+                    <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+                    <h3><strong>Microcontroller Interfacing and Assembly Language, </strong><br>May – Aug 2016</h3>
+                    <ul>
+                      <li>Examined conditional braches and branching to subroutines by developing a program to calculate
+                          elements of the Fibonacci sequence, and use 128-bit variables instead of 64-bit in order to store more
+                          elements of the sequence</li>
+                      <li>Studied interrupt by generating interrupt handler and synchronizing the display updates associated with
+                          OLED device to allow application’s counter and LEDs updated at the same time</li>
+                      <li>Configured counter to generate a periodic interrupt after a certain amount of time, displayed changes
+                          on the screen, also used this functionality to debounce ZedBoard’s button presses and releases </li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h3>Tempus ullamcorper</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h3>iOS Application: PhysioGuide<br>Sept – Dec 2015</h3>
+                    <ul>
+                      <li>Collaborated with 3 other students, self-studied Swift in Xcode to analyze, design and develop an iOS
+                          application (both code and UI) that provides several appropriate exercise video and advised exercise
+                          routines to help with improving personal health and fitness</li>
+                      <li>Used build-in mobile feature (Accelerometer and Gyroscope) to detect if user do the exercise properly</li>
+                      <li><a href="https://sites.google.com/site/starsfucmpt275/ ">Project Link</li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h3>Feugiat lorem aenean</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article>
+                    <h3>Amet varius aliquam</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
 
-							<!-- Education Section -->
-								<section id="education">
-									<header class="major">
-										<h2>Education</h2>
-									</header>
-									<div class="">
-										<article>
-											<h3>Graduate student, Simon Fraser University, May 2017 - Present</h3>
-											<ul>
-												<li>In Accelerated Master program</li>
-												<li><a href="http://www.sfu.ca/~ibajic/">Professor: <a href="http://www.sfu.ca/~ibajic/">Ivan Bajic</a></li>
-											</ul>
+            <!-- Other work Section -->
+              <section>
+                <header class="major">
+                  <h2>NON-TECHNICAL WORK EXPERIENCE</h2>
+                </header>
+                <div class="posts">
+                  <article id="cashier">
+                    <h3>Cashier, International News, Brentwood Town Center, Burnaby, B.C.<br>May – Oct 2015</h3>
+                    <ul>
+                      <li>Ensured customers’ satisfaction and dealt with all the complaints by providing them with high quality
+                          services to build strong relationships and connections</li>
+                      <li>Assisted customers with their purchases with great patience to promote the products and enhance the
+                          reputation of the store</li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                  <article id="peerEdu">
+                    <h3>Peer Educator, FIC<br>Jan – Sept 2015</h3>
+                    <ul>
+                      <li>Helped students in FIC with subjects like calculus, physics, python and C++ language, Micro-economy
+                          and other engineering courses by spending time studying with them to solve and explain questions</li>
+                      <li>Taught students by explaining theorems and providing several sample exercises to develop their
+                          logical thought in mathematics and improve their letter grades</li>
+                    </ul>
+                    <ul class="actions">
+                      <li><a href="#" class="button">More</a></li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
 
-											<h3>Undergraduate studuent, Simon Fraser University, Jan 2015 - Present</h3>
-											<ul>
-												<li>Major in Computer Engineering, minor in Computer Science, CGPA of 3.76</li>
-												<li>Expected graduation: Summer, 2018</li>
-											</ul>
+            <!-- Education Section -->
+              <section id="education">
+                <header class="major">
+                  <h2>Education</h2>
+                </header>
+                <div class="">
+                  <article>
+                    <h3>Graduate student, Simon Fraser University, May 2017 - Present</h3>
+                    <ul>
+                      <li>In Accelerated Master program</li>
+                      <li><a href="http://www.sfu.ca/~ibajic/">Professor: <a href="http://www.sfu.ca/~ibajic/">Ivan Bajic</a></li>
+                    </ul>
 
-											<h3>PUniversity Transfer Program (Stage II) in Engineering Science, May – Dec 2014</h3>
-											<ul><li>Fraser International College, GPA of 4.059</li></ul>
-										</article>
-									</div>
-								</section>
+                    <h3>Undergraduate studuent, Simon Fraser University, Jan 2015 - Present</h3>
+                    <ul>
+                      <li>Major in Computer Engineering, minor in Computer Science, CGPA of 3.76</li>
+                      <li>Expected graduation: Summer, 2018</li>
+                    </ul>
 
-								<!-- Awards Section -->
-								<section id="award">
-									<header class="major">
-										<h2>Awards</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<ul>
-												<li>VP Research - Undergraduate Student Research Award</li>
-												<li>SFU Undergraduate Open Scholarship</li>
-												<li>SFU FAS PresentSFU International Summit Entrance Scholarship                                                    ’s Honor Roll</li>
-												<li>SFU FAS Dean’s Honor Roll</li>
-												<li>SFU International Summit Entrance Scholarship</li>
-												<li>FIC Honor Roll Student</li>
-											</ul>
-										</article>
-									</div>
-								</section>
-						</div>
-					</div>
+                    <h3>PUniversity Transfer Program (Stage II) in Engineering Science, May – Dec 2014</h3>
+                    <ul><li>Fraser International College, GPA of 4.059</li></ul>
+                  </article>
+                </div>
+              </section>
 
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Arlene's Homepage</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="#skill">Summary of Skills</a></li>
-										<li><span class="opener">Professional Work Experience</span>
-											<ul>
-												<li><a href="#IBM">Software Test Specialist, IBM</a></li>
-												<li><a href="#RA">Research Assistant, SFU</a></li>
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Technical Projects</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-										<li><span class="opener">Non-Technical Work Experience</span>
-											<ul>
-												<li><a href="#cashier">Cashier, International News</a></li>
-												<li><a href="#peerEdu">Peer Educator, FIC</a></li>
-											</ul>
-										</li>
-										<li><a href="#education">Education</a></li>
-										<li><a href="#award">Awards</a></li>
-									</ul>
-								</nav>
+              <!-- Awards Section -->
+              <section id="award">
+                <header class="major">
+                  <h2>Awards</h2>
+                </header>
+                <div class="posts">
+                  <article>
+                    <ul>
+                      <li>VP Research - Undergraduate Student Research Award</li>
+                      <li>SFU Undergraduate Open Scholarship</li>
+                      <li>SFU FAS PresentSFU International Summit Entrance Scholarship                                                    ’s Honor Roll</li>
+                      <li>SFU FAS Dean’s Honor Roll</li>
+                      <li>SFU International Summit Entrance Scholarship</li>
+                      <li>FIC Honor Roll Student</li>
+                    </ul>
+                  </article>
+                </div>
+              </section>
+          </div>
+        </div>
 
 
-							<!-- Section -->
-								<!-- <section>
-									<header class="major">
-										<h2>Ante interdum</h2>
-									</header>
-									<div class="mini-posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-										</article>
-									</div>
-									<ul class="actions">
-										<li><a href="#" class="button">More</a></li>
-									</ul>
-								</section> -->
+      <!-- Sidebar -->
+        <div id="sidebar">
+          <div class="inner">
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>...</p>
-									<ul class="contact">
-										<li class="fa-envelope-o"><a href="#">jfa49@sfu.ca</a></li>
-										<li class="fa-phone">(778) 898-4883</li>
-										<li class="fa-home">8888 University Drive<br />
-										Burnaby, BC V5A 1S6</li>
-									</ul>
-								</section>
+            <!-- Search -->
+              <section id="search" class="alt">
+                <form method="post" action="#">
+                  <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+              </section>
 
-							<!-- Footer -->
-								<!-- <footer id="footer">
-									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer> -->
+            <!-- Menu -->
+              <nav id="menu">
+                <header class="major">
+                  <h2>Arlene's Homepage</h2>
+                </header>
+                <ul>
+                  <li><a href="index.html">Homepage</a></li>
+                  <li><a href="#skill">Summary of Skills</a></li>
+                  <li><span class="opener">Professional Work Experience</span>
+                    <ul>
+                      <li><a href="#IBM">Software Test Specialist, IBM</a></li>
+                      <li><a href="#RA">Research Assistant, SFU</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="opener">Technical Projects</span>
+                    <ul>
+                      <li><a href="#">Lorem Dolor</a></li>
+                      <li><a href="#">Ipsum Adipiscing</a></li>
+                      <li><a href="#">Tempus Magna</a></li>
+                      <li><a href="#">Feugiat Veroeros</a></li>
+                    </ul>
+                  </li>
+                  <li><span class="opener">Non-Technical Work Experience</span>
+                    <ul>
+                      <li><a href="#cashier">Cashier, International News</a></li>
+                      <li><a href="#peerEdu">Peer Educator, FIC</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#education">Education</a></li>
+                  <li><a href="#award">Awards</a></li>
+                </ul>
+              </nav>
 
-						</div>
-					</div>
 
-			</div>
+            <!-- Section -->
+              <!-- <section>
+                <header class="major">
+                  <h2>Ante interdum</h2>
+                </header>
+                <div class="mini-posts">
+                  <article>
+                    <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                  </article>
+                  <article>
+                    <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                  </article>
+                  <article>
+                    <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                  </article>
+                </div>
+                <ul class="actions">
+                  <li><a href="#" class="button">More</a></li>
+                </ul>
+              </section> -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+            <!-- Section -->
+              <section>
+                <header class="major">
+                  <h2>Get in touch</h2>
+                </header>
+                <p>...</p>
+                <ul class="contact">
+                  <li class="fa-envelope-o"><a href="#">jfa49@sfu.ca</a></li>
+                  <li class="fa-phone">(778) 898-4883</li>
+                  <li class="fa-home">8888 University Drive<br />
+                  Burnaby, BC V5A 1S6</li>
+                </ul>
+              </section>
 
-	</body>
-</html>
+            <!-- Footer -->
+              <!-- <footer id="footer">
+                <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+              </footer> -->
+
+          </div>
+        </div>
+
+    </div>
+
+  <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+    <script src="assets/js/main.js"></script>
+
+</body>
