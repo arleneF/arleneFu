@@ -42,25 +42,36 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>BrickOut:<br></h1>
-										<h2> Arcade Game Project using ZedBoard </h2>
+										<h1>Graphical UART Performance Monitor and VGA Console</li></h1>
+										<h2> VGA & Timer Controller<br>Petalinux Project</h2>
 									</header>
+									<a href="#" class="image"><img src="images/351.png" alt="" height=600 width=800/></a>
 
-									<div>The goal of this ENSC 452 course is to implement a program on ZedBoard with
-											both Xilinx's system software and hardware. We decide our project to be a video game
-											similar to the brick breaker. In our game, the user can move the bar at the bottom of the
-											screen left and right in order to bounce the movable ball up and try to hit the bricks.
-											Once the ball hit any brick, the brick will be downgraded and eventually wiped out. We
-											will split our job into 6 milestones and use Agile methodology to accept greater
-											flexibility and to get higher efficiency. Each part will be tested by a specific test plan to
-											ensure the completeness.
+									<div>TThe goal of this project will be to create your own VGA and UART drivers that will be used to create a graphical
+											performance monitor for the UART driver that will run on an embedded Linux system (PetaLinux) [1]. Through
+											working on this project you will be exposed to elements of real-time programming and learn to interface with
+											the hardware system through writing low-level kernel device drivers.
 										</div>
+
+										<ul>
+											<li>Created a software rendering framework for drawing an image on the screen with alpha
+												blending and clipping required image content</li>
+											<li>Developed and integrated VGA and timer driver in Linux environment through PetaLinux
+												and cross-complied it on ZedBoard to establish connection between keyboard and screen
+												display as a graphical performance monitor with the functionality of alphabetical interpretation
+												on keyboard through VGA driver and displaying performance metrics about the operation of the UART on the screen</li>
+											<li>Improved efficiency and coherency with the design specification by reducing times of printing metrics,
+												transporting intermediate data into local buffer instead of global buffer</li>
+											<li>Supported several special functions such as changing new lines both manually and automatically,
+												deleting characters using backspace and implemented special cases when the new line is needed or
+												the screen is filled up</li>
+										</ul>
+
 										<br>
 										<ul class="contact">
-											<li class="fa-file-pdf-o"><a href="Files/452Project proposal.pdf" target="_blank">Project Proposal</a></li>
-											<li class="fa-file-pdf-o"><a href="Files/452GroupReport.pdf" target="_blank">Project Group Report</a></li>
-											<li class="fa-file-pdf-o"><a href="Files/452IndividualReport.pdf" target="_blank">Project Individual Report</a></li>
-											<li class="fa-code"><a href="https://github.com/arleneF/BrickBreaker" target="_blank">Project Code</a></li>
+											<li class="fa-file-pdf-o"><a href="Files/351Description.pdf" target="_blank">Project Description</a></li>
+											<li class="fa-file-powerpoint-o"><a href="Files/351Demo_VGA.pptx" target="_blank">Project Presentation</a></li>
+											<li class="fa-code"><a href="#" target="_blank">Project Code _ Under construction</a></li>
 										</ul>
 								</section>
 
