@@ -10,7 +10,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" hreflang="en" href="assets/css/main.css" />
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 </head>
@@ -45,23 +45,30 @@
 										<h1>Vehicle and Car Plate Detection : <br></h1>
 										<h2> Deep Learning Project II</h2>
 									</header>
-									<a href="#" class="image"><img src="images/424Figure.png" alt="" /></a>
+									<a href="#" class="image"><img src="images/424Figure.png" alt="" style="margin:0 auto"/></a>
 
-									<div><div>Our project is divided into two major components: vehicle detection and license plate
+									<div>
+											<div style="text-indent: 25px">This is a course project from ENSC424, SFU. Completed with other three students:</div>
+											<div style="padding-left: 40px"><ul>
+												<li>Ricky Chen</li>
+												<li>Toky Saleh</li>
+												<li>Karambeer Dhillon</li>
+											</ul></div>
+											<div style="text-indent: 25px">Our project is divided into two major components: vehicle detection and license plate
 											character recognition.</div>
-											<div>Phase I is detecting whether an input contains vehicles or not. If the algorithm predicts
+											<div style="text-indent: 25px">Phase I is detecting whether an input contains vehicles or not. If the algorithm predicts
 											that the input contains vehicles, then we need to define a method which will precisely locate and
 											crop the vehicle from the original data. Starting with the output from Phase I as the input, Phase
 											II should search for the vehicle’s license plate and have the ability to recognize the number on
 											the car plate.</div>
-											<div>Through investigating, we found that vehicle detection is already quite developed and
+											<div style="text-indent: 25px">Through investigating, we found that vehicle detection is already quite developed and
 											there are numerous existing methods online;; however, we still decided to explore deep learning
 											through this project. We attempt to improve the accuracy with some pre-­trained models.
 											What’s more, in consideration of time and resource limitation, (we neither have enough
 											time nor access to any GPU machine), we decide to challenge image based detection rather
 											than video based.</div>
 										</div>
-										<br>
+										<br><br>
 										<ul class="contact">
 											<li class="fa-file-pdf-o"><a href="Files/Vehicle424.pdf" target="_blank">Project Final Report</a></li>
 											<li class="fa-code"><a href="https://github.com/arleneF/Vehicle-CarPlate_detection" target="_blank">Project Code</a></li>
